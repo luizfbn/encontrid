@@ -1,0 +1,78 @@
+.groups {
+    padding: 80px 0;
+}
+.groups h2 {
+    margin-bottom: 80px;
+}
+.groups ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 52px;
+    padding: 0 20px 24px 20px;
+    max-width: 1244px;
+    margin: 0 auto;
+}
+.groups li {
+    flex: 1;
+    height: 516px;
+    max-width: 380px;
+    background-color: var(--color-0);
+    border-radius: 12px 12px 0 0;
+    border-bottom: 4px solid var(--color-t1);
+}
+.groups li:nth-child(3n-1) {
+    margin-top: 60px;
+    border-bottom: 4px solid var(--color-p1);
+}
+.groups li:nth-child(3n) {
+    border-bottom: 4px solid var(--color-s1);
+}
+.groups a {
+    display: block;
+    height: 100%;
+}
+.groups li:hover {
+    border-bottom-width: 8px;
+    transition: .1s;
+}
+.groups img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+.groups h3 {
+    margin: 24px 0 0 24px;
+}
+.groups span {
+    margin: 24px 4px 0 24px;
+}
+
+@media (max-width: 1200px) {
+    .groups ul {
+        gap: 20px;
+        justify-content: space-around;
+    }
+    .groups li {
+        height: 380px;
+        min-width: 240px;
+    }
+    .groups img {
+        height: 280px;
+    }
+    .groups h3 {
+        margin: 12px 0 0 12px;
+    }
+    .groups span {
+        margin: 12px 4px 0 12px;
+    }
+}
+
+@media (max-width: 800px) {
+    .groups h2 {
+        margin-bottom: 40px;
+    }
+    .groups li:nth-child(3n-1) {
+        margin-top: 0;
+    }
+} 

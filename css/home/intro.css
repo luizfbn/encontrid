@@ -5,15 +5,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 40px;
-    box-sizing: border-box;
-    max-width: 1200px;
-    padding: 64px 20px 120px 20px;
-    margin: 0 auto;
+    padding-top: 64px;
+    padding-bottom: 120px;
     align-items: center;
 }
 .intro img {
     height: 100%;
-    object-fit:contain;
+    object-fit: contain;
 }
 .intro h1 {
     margin-bottom: 20px;
