@@ -14,26 +14,33 @@
 }
 .groups li {
     flex: 1;
-    height: 516px;
+    height: 100%;
     max-width: 380px;
     background-color: var(--color-0);
+    box-sizing: border-box;
     border-radius: 12px 12px 0 0;
     border-bottom: 4px solid var(--color-t1);
+    border-right: 0px solid var(--color-t1);
+    transition: .15s;
 }
 .groups li:nth-child(3n-1) {
     margin-top: 60px;
     border-bottom: 4px solid var(--color-p1);
+    border-right: 0px solid var(--color-p1);
 }
 .groups li:nth-child(3n) {
     border-bottom: 4px solid var(--color-s1);
+    border-right: 0px solid var(--color-s1);
 }
 .groups a {
     display: block;
     height: 100%;
 }
 .groups li:hover {
+    border-radius: 18px 18px 0 0;
     border-bottom-width: 8px;
-    transition: .1s;
+    border-right-width: 8px;
+    transition: .15s;
 }
 .groups img {
     width: 100%;
@@ -45,7 +52,8 @@
     margin: 24px 0 0 24px;
 }
 .groups span {
-    margin: 24px 4px 0 24px;
+    display: inline-block;
+    margin: 4px 0 24px 24px;
 }
 
 @media (max-width: 1200px) {
@@ -54,7 +62,6 @@
         justify-content: space-around;
     }
     .groups li {
-        height: 380px;
         min-width: 240px;
     }
     .groups img {
@@ -64,7 +71,7 @@
         margin: 12px 0 0 12px;
     }
     .groups span {
-        margin: 12px 4px 0 12px;
+        margin: 0 0 12px 12px;
     }
 }
 
