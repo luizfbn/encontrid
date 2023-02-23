@@ -1,0 +1,47 @@
+.metodology {
+    padding-bottom: 120px;
+}
+.metodology h2 {
+    margin-bottom: 120px;
+}
+.metodology ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    column-gap: 120px;
+}
+.metodology li {
+    display: flex;
+    flex-direction: column;
+}
+.metodology li div {
+    align-self: center;
+}
+.metodology h3 {
+    margin: 40px 0 20px 0;
+}
+
+@media (max-width: 1200px) {
+    .metodology ul {
+        column-gap: 80px;
+    }
+    .metodology h3 {
+        margin: 20px 0 10px 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .metodology h2 {
+        margin-bottom: 40px;
+    }
+    .metodology ul {
+        column-gap: 40px;
+        row-gap: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    .metodology ul {
+        grid-template-columns: 1fr;
+    }
+}
