@@ -71,10 +71,10 @@
         font-size: 2rem;
     }
     .font-1-xl {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
     .font-1-l {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
     .font-2-l {
         font-size: 1.1rem;
@@ -82,6 +82,9 @@
     .font-2-m,
     .font-2-m-b {
         font-size: 1rem;
+    }
+    .font-2-s {
+        font-size: 0.9rem;
     }
 }
 
@@ -94,6 +97,6 @@
         font-size: 1.15rem;
     }
     .font-2-xs {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }

@@ -1,7 +1,8 @@
 .groups {
-    padding: 80px 0;
+    padding-top: 80px;
+    padding-bottom: 120px;
 }
-.groups h2 {
+.groups-title {
     margin-bottom: 80px;
 }
 .groups ul {
