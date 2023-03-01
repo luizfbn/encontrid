@@ -28,8 +28,7 @@
         background-color: var(--color-s4);
     }
     .intro {
-        grid-template-columns: 1fr;
-        gap: 32px;
+        padding-bottom: 60px;
     }
     .intro h1 {
         margin-bottom: 12px;
@@ -37,5 +36,13 @@
     .intro img {
         height: 300px;
         width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .intro {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 32px;
     }
 }
