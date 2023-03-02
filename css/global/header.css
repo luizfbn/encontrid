@@ -1,5 +1,8 @@
 .header-bg {
     background-color: var(--color-s5);
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 .header {
     display: flex;
@@ -24,38 +27,94 @@
     content: "";
     display: block;
     height: 2px;
-    width: 0;
+    width: 100%;
     background-color: var(--color-2);
     margin-top: 4px;
-    transition: 0.3s;
+    transition: transform .5s;
+    transform: scaleX(0);
+    transform-origin: right;
     position: absolute;
 }
 .header-menu a:hover:after {
-    width: 100%;
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
-@media (max-width: 800px) {
-    .header-menu {
-        gap: 20px;
-    }
-    .header-menu a {
-        background-color: var(--color-s4);
-        padding: 12px 16px;
-        border-radius: 8px;
-    }
-    .header-menu a:hover {
-        background-color: var(--color-s3);
-    }
-    .header a:after {
-        display: none;
-    }
+.header-menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#header-menu-toggle {
+    display: none;
+}
+.header-menu-button,
+.header-menu-button::before,
+.header-menu-button::after {
+    display: block;
+    background-color: var(--color-2);
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    border-radius: 2px;
+}
+.header-menu-button::before {
+    content: "";
+    margin-top: -8px;
+}
+.header-menu-button::after {
+    content: "";
+    margin-top: 8px;
+}
+#header-menu-toggle:checked + .header-menu-button-container .header-menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+}
+#header-menu-toggle:checked + .header-menu-button-container .header-menu-button {
+    background-color: var(--color-s5);
+}
+#header-menu-toggle:checked + .header-menu-button-container .header-menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
 }
 
 @media (max-width: 600px) {
+    .header-menu-button-container {
+        display: flex;
+    }
     .header-menu {
-        gap: 12px;
+        position: absolute;
+        gap: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 68px;
+        flex-direction: column;
+    }
+    .header-menu li {
+        display: none;
+        margin: 0;
+        background-color: var(--color-s5);
+    }
+    .header-menu li:not(:last-child) {
+        border-bottom: 1px solid var(--color-s3);
+    }
+    #header-menu-toggle:checked ~ .header-menu li {
+        display: flex;
     }
     .header-menu a {
+        width: 100%;
+        text-align: center;
         padding: 8px 12px;
+    }
+    .header-menu a:after {
+        display: none;
+    }
+    .header-menu a:hover {
+        background-color: var(--color-s3);
     }
 }
