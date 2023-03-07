@@ -22,12 +22,10 @@
     gap: 32px;
     max-width: 500px;
     margin: 0 45px;
-}
-.testimony-content div {
-    align-self: flex-end;
-    padding-top: 40px;
-    margin-bottom: auto;
-    width: 140px;
+    background-image: url("../../assets/icons/plane.svg");
+    background-repeat: no-repeat;
+    background-position: right 0px top 40px;
+    background-size: 140px;
 }
 .testimony-content blockquote p {
     font-family: "Merriweather", serif;
@@ -54,17 +52,12 @@
     .testimony {
         gap: 40px;
     }
-    .testimony-content div {
-        width: 108px;
-    }
 }
 
 @media (max-width: 800px) {
     .testimony-content {
         padding-top: 20px;
-    }
-    .testimony-content div {
-        display: none;
+        background-image: none;
     } 
 }
 

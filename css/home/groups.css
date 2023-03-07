@@ -8,6 +8,7 @@
 .groups ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 52px;
     padding: 0 20px;
     max-width: 1244px;
@@ -85,4 +86,4 @@
     .groups li:nth-child(3n-1) {
         margin-top: 0;
     }
-} 
+}

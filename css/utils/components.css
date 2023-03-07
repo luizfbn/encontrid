@@ -6,6 +6,16 @@
     margin: 0 auto;
 }
 
+.title-bg {
+    background-color: var(--color-s4);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.title p {
+    margin-bottom: 4px;
+}
+
 .button {
     display: inline-block;
     padding: 12px 24px;
@@ -35,5 +45,9 @@
     .button {
         padding: 12px 16px;
         font-size: 0.85rem;
+    }
+    .title-bg {
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 }
