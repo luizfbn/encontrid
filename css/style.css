@@ -14,5 +14,8 @@
 @import "./home/methodology.css";
 @import "./home/testimony.css";
 
+/* Groups */
+@import "./groups/groups.css";
+
 /* Plans */
 @import "./plans/plans.css";

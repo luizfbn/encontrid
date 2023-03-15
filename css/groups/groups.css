@@ -1,0 +1,190 @@
+.groups-bg {
+    box-shadow: inset 0 200px 0 0 var(--color-s4);
+    background-color: var(--color-2);
+}
+.groups {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding-top: 20px;
+    padding-bottom: 120px;
+    background: url("../../assets/icons/waves.svg") right top 352px no-repeat, 
+    url("../../assets/icons/waves.svg") left calc(50% + 136px) no-repeat, 
+    url("../../assets/icons/draw-waves.svg") right bottom 80px no-repeat;
+}
+.group {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 844px;
+    background-color: var(--color-0);
+    box-shadow: 0 1px 2px var(--color-3);
+    border-radius: 12px 12px 0 12px;
+}
+.group:nth-child(3n-1) {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+    border-radius: 12px 12px 12px 0;
+}
+.group-img {
+    max-width: 360px;
+}
+.group-img img {
+    border-radius: 12px 0 0 12px;
+    box-shadow: -4px 4px 0 0 var(--color-t1);
+    transition: .15s;
+}
+.group:nth-child(3n-1) .group-img img {
+    border-radius: 0 12px 12px 0;
+    box-shadow: 4px 4px 0 0 var(--color-p1);
+}
+.group:nth-child(3n) .group-img img {
+    box-shadow: -4px 4px 0 0 var(--color-s1);
+}
+.group:hover .group-img img {
+    transition: .15s;
+    box-shadow: -8px 8px 0 0 var(--color-t1);
+}
+.group:nth-child(3n-1):hover .group-img img {
+    box-shadow: 8px 8px 0 0 var(--color-p1);
+}
+.group:nth-child(3n):hover .group-img img {
+    box-shadow: -8px 8px 0 0 var(--color-s1);
+}
+.group-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 24px 24px 24px 40px;
+}
+.group-content p {
+    max-width: 34ch;
+    flex: 1;
+}
+.group-content a {
+    align-self: flex-end;
+}
+.group:nth-child(3n-1) .group-content a {
+    align-self: flex-start;
+}
+.group-content span {
+    margin-bottom: 32px;
+}
+.group-content-title {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.group-content-flags img {
+    margin-right: 12px;
+}
+.group-content-title h3,
+.group-content-flags,
+.group-content-flags img {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.group-plan-bg {
+    background-color: var(--color-t1);
+}
+.group-plan {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    align-items: center;
+}
+.group-plan img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.group-plan h1 {
+    margin-bottom: 20px;
+}
+.group-plan p {
+    margin-bottom: 24px;
+    max-width: 34ch;
+}
+
+@media (max-width: 800px) {
+    .groups {
+        gap: 40px;
+        background: none;
+    }
+    .group:nth-child(n) {
+        max-width: 380px;
+        align-self: center;
+        flex-direction: row;
+        border-radius: 12px 12px 0 0;
+        box-shadow: 0 4px 0 0 var(--color-t1);
+        transition: .15s;
+    }
+    .group:nth-child(3n-1) {
+        box-shadow: 0 4px 0 0 var(--color-p1);
+    }
+    .group:nth-child(3n) {
+        box-shadow: 0 4px 0 0 var(--color-s1);
+    }
+    .group:nth-child(n):hover {
+        box-shadow: 8px 8px 0 0 var(--color-t1);
+    }
+    .group:nth-child(3n-1):hover {
+        box-shadow: 8px 8px 0 0 var(--color-p1);
+    }
+    .group:nth-child(3n):hover {
+        box-shadow: 8px 8px 0 0 var(--color-s1);
+    }
+    .group-img {
+        max-width: 100%;
+    }
+    .group:nth-child(n) .group-img img,
+    .group:nth-child(n):hover .group-img img {
+        box-shadow: none;
+    }
+    .group:nth-child(n) .group-img img {
+        border-radius: 12px 12px 0 0;
+    }
+    .group:nth-child(n) .group-content a {
+        align-self: flex-end;
+    }
+    .group-content-title {
+        flex-wrap: wrap-reverse;
+        gap: 8px;
+        justify-content: space-between;
+    }
+    .group-content-flags img {
+        width: 32px;
+        margin-right: 4px;
+    }
+    .group-content span,
+    .group-content p {
+        margin-bottom: 20px;
+    }
+
+    .group-plan {
+        padding-bottom: 60px;
+    }
+    .group-plan h1 {
+        margin-bottom: 12px;
+    }
+    .group-plan img {
+        height: 300px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .group-plan {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 32px;
+    }
+    .group-plan h1 {
+        max-width: 16ch;
+    }
+    .group-plan p {
+        max-width: 32ch;
+    }
+}
