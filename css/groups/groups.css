@@ -1,12 +1,11 @@
 .groups-bg {
-    box-shadow: inset 0 200px 0 0 var(--color-s4);
+    box-shadow: inset 0 180px 0 0 var(--color-s4);
     background-color: var(--color-2);
 }
 .groups {
     display: flex;
     flex-direction: column;
     gap: 80px;
-    padding-top: 20px;
     padding-bottom: 120px;
     background: url("../../assets/icons/waves.svg") right top 352px no-repeat, 
     url("../../assets/icons/waves.svg") left calc(50% + 136px) no-repeat, 
@@ -31,7 +30,7 @@
 .group-img img {
     border-radius: 12px 0 0 12px;
     box-shadow: -4px 4px 0 0 var(--color-t1);
-    transition: .15s;
+    transition: box-shadow .15s;
 }
 .group:nth-child(3n-1) .group-img img {
     border-radius: 0 12px 12px 0;
@@ -41,7 +40,7 @@
     box-shadow: -4px 4px 0 0 var(--color-s1);
 }
 .group:hover .group-img img {
-    transition: .15s;
+    transition: box-shadow .15s;
     box-shadow: -8px 8px 0 0 var(--color-t1);
 }
 .group:nth-child(3n-1):hover .group-img img {
@@ -100,7 +99,7 @@
     width: 100%;
     object-fit: contain;
 }
-.group-plan h1 {
+.group-plan h2 {
     margin-bottom: 20px;
 }
 .group-plan p {
@@ -119,7 +118,7 @@
         flex-direction: row;
         border-radius: 12px 12px 0 0;
         box-shadow: 0 4px 0 0 var(--color-t1);
-        transition: .15s;
+        transition: box-shadow .15s;
     }
     .group:nth-child(3n-1) {
         box-shadow: 0 4px 0 0 var(--color-p1);
@@ -166,7 +165,7 @@
     .group-plan {
         padding-bottom: 60px;
     }
-    .group-plan h1 {
+    .group-plan h2 {
         margin-bottom: 12px;
     }
     .group-plan img {
@@ -181,7 +180,7 @@
         flex-direction: column-reverse;
         gap: 32px;
     }
-    .group-plan h1 {
+    .group-plan h2 {
         max-width: 16ch;
     }
     .group-plan p {

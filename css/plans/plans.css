@@ -1,16 +1,20 @@
+.plans-bg {
+    background-color: var(--color-s4);
+}
 .plans {
     padding-top: 80px;
     padding-bottom: 120px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    column-gap: 40px;
     align-items: center;
+}
+#plans .plans {
+    padding-top: 0;
 }
 .plans-title {
     grid-column: 1/-1;
-}
-.plans h2 {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 .plans-item {
     background-color: var(--color-1);
@@ -20,24 +24,24 @@
     max-width: 520px;
     padding: 48px 28px 28px 48px;
     border-radius: 28px 28px 28px 0;
-    box-shadow: 4px 4px 0 0 var(--color-p1);
+    box-shadow: 4px 4px 0 0 var(--color-s1);
     transition: .15s;
     background-image: url("../../assets/icons/crown.svg");
     background-repeat: no-repeat;
     background-position: left 48px bottom 18px;
     background-size: 80px;
 }
-.plans-item:nth-child(2n) {
+.plans-item:nth-of-type(2n) {
     background-image: url("../../assets/icons/rocket.svg");
     border-radius: 28px 0 28px 28px;
-    box-shadow: 4px 4px 0 0 var(--color-s1);
+    box-shadow: 4px 4px 0 0 var(--color-p1);
 }
 .plans-item:hover {
-    box-shadow: 8px 8px 0 0 var(--color-p1);
+    box-shadow: 8px 8px 0 0 var(--color-s1);
     transition: .15s;
 }
-.plans-item:nth-child(2n):hover {
-    box-shadow: 8px 8px 0 0 var(--color-s1);
+.plans-item:nth-of-type(2n):hover {
+    box-shadow: 8px 8px 0 0 var(--color-p1);
     transition: .15s;
 }
 .plans-item h3 {
@@ -76,6 +80,9 @@
 @media (max-width: 800px) {
     .plans {
         grid-template-columns: 1fr;
+    }
+    .plans-title {
+        margin-bottom: 60px;
     }
 }
 

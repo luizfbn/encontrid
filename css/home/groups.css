@@ -78,8 +78,8 @@
 }
 
 @media (max-width: 800px) {
-    .groups-list h2 {
-        margin-bottom: 40px;
+    .groups-list-title {
+        margin-bottom: 60px;
     }
     .groups-list li:nth-child(3n-1) {
         margin-top: 0;
