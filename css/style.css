@@ -10,12 +10,13 @@
 
 /* Home */
 @import "./home/intro.css";
-@import "./home/groups.css";
 @import "./home/methodology.css";
 @import "./home/testimony.css";
 
 /* Groups */
+@import "./groups/groups-list.css";
 @import "./groups/groups.css";
 
 /* Plans */
 @import "./plans/plans.css";
+@import "./plans/questions.css";

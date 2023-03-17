@@ -6,14 +6,20 @@
     margin: 0 auto;
 }
 
-.title-bg {
+.title {
     background-color: var(--color-s4);
     padding-top: 60px;
     padding-bottom: 80px;
 }
-
 .title p {
     margin-bottom: 4px;
+}
+
+.padding-top {
+    padding-top: 80px;
+}
+.padding-bottom {
+    padding-bottom: 120px;
 }
 
 .button {
@@ -46,8 +52,14 @@
         padding: 12px 16px;
         font-size: 0.85rem;
     }
-    .title-bg {
+    .title {
         padding-top: 40px;
+        padding-bottom: 60px;
+    }
+    .padding-top {
+        padding-top: 40px;
+    }
+    .padding-bottom {
         padding-bottom: 60px;
     }
 }

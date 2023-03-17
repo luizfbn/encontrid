@@ -1,14 +1,10 @@
-.methodology {
-    padding-bottom: 120px;
-}
 .methodology-title {
     margin-bottom: 80px;
 }
 .methodology ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 80px;
-    column-gap: 120px;
+    gap: 80px 120px;
 }
 .methodology li {
     display: flex;
@@ -35,8 +31,7 @@
         margin-bottom: 60px;
     }
     .methodology ul {
-        column-gap: 40px;
-        row-gap: 60px;
+        gap: 60px 40px;
     }
 }
 

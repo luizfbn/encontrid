@@ -5,8 +5,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 40px;
-    padding-top: 60px;
-    padding-bottom: 120px;
     align-items: center;
 }
 .intro img {
@@ -26,9 +24,6 @@
 @media (max-width: 800px) {
     .intro-bg {
         background-color: var(--color-s4);
-    }
-    .intro {
-        padding-bottom: 60px;
     }
     .intro h1 {
         margin-bottom: 12px;
