@@ -1,0 +1,39 @@
+.contact-bg {
+    background-color: var(--color-s4);
+}
+.contact {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    background-color: var(--color-0);
+    border-radius: 28px 28px 0 28px;
+    box-shadow: 4px 4px 0 0 var(--color-p1), inset 1px 1px 2px var(--color-3);
+    transition: box-shadow .15s;
+}
+.contact:hover {
+    box-shadow: 8px 8px 0 0 var(--color-p1), inset 1px 1px 2px var(--color-3);
+    transition: box-shadow .15s;
+}
+.contact-form {
+    padding: 40px;
+}
+.contact-map img {
+    border-radius: 0 28px 0 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+@media (max-width: 1200px) {
+    .contact {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    .contact {
+        grid-template-columns: 1fr;
+    }
+    .contact-map {
+        display: none;
+    }
+}

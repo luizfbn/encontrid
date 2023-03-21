@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato | Encontrid</title>
+        <meta name="description" content="Entre em contato conosco.">
+        <link rel="stylesheet" href="./css/style.css">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600&family=Lato:wght@400;700&family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header-bg">
+            <div class="header container">
+                <a href="./">
+                    <img src="./assets/img/encontrid.svg" alt="Encontrid">
+                </a>
+                <input id="header-menu-toggle" type="checkbox"/>
+                <label class="header-menu-button-container" for="header-menu-toggle">
+                    <div class="header-menu-button"></div>
+                </label>
+                <nav aria-label="primary">
+                    <ul class="header-menu color-2 font-1-m">
+                        <li><a href="./groups.html">Grupos</a></li>
+                        <li><a href="./plans.html">Planos</a></li>
+                        <li><a href="./contact.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="contact-bg">
+            <div class="title">
+                <div class="container">
+                    <p class="font-2-m-b color-4 all-caps">entre em contato</p>
+                    <h1 class="font-1-xxl color-2">queremos te ouvir</h1>
+                </div>
+            </div>
+            <div class="container padding-bottom">
+                <div class="contact">
+                    <section class="contact-form" aria-label="Formulário">
+                        <form class="form" action="./contact.html">
+                            <div>
+                                <label for="name">Nome</label>
+                                <input type="text" id="name" name="name" placeholder="Seu nome">
+                            </div>
+                            <div>
+                                <label for="phone">Telefone</label>
+                                <input type="text" id="phone" name="phone" placeholder="(99) 9999-9999">
+                            </div>
+                            <div class="col-2">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="contato@email.com">
+                            </div>
+                            <div class="col-2">
+                                <label for="message">Mensagem</label>
+                                <textarea rows="4" id="message" name="message" placeholder="O que você precisa?"></textarea>
+                            </div>
+                            <button class="button col-2">Enviar mensagem</button>
+                        </form>
+                    </section>
+                    <section class="contact-map" aria-label="Sedes">
+                        <img src="./assets/img/map.jpg" alt="Mapa com a localização das sedes em Copacabana e Humaitá">
+                    </section>
+                </div>
+            </div>
+        </main>
+        <article class="address container padding-top padding-bottom">
+            <h2 class="font-1-xxl color-10">nossas unidades</h2>
+            <div class="address-item">
+                <h3 class="font-1-l color-9">copacabana</h3>
+                <div class="address-item-content font-2-xs color-7">
+                    <p>Rua Alfabeto A, 18</p>
+                    <p>Rio de Janeiro - RJ</p>
+                </div>
+                <div class="address-item-content font-2-xs color-7">
+                    <a href="mailto:copa@encontrid.com">copa@encontrid.com</a>
+                    <a href="tel:+5521999999999">(21) 99999-9999</a>
+                </div>
+            </div>
+            <div class="address-item">
+                <h3 class="font-1-l color-9">humaitá</h3>
+                <div class="address-item-content font-2-xs color-7">
+                    <p>Rua Alfabeto B, 20</p>
+                    <p>Rio de Janeiro - RJ</p>
+                </div>
+                <div class="address-item-content font-2-xs color-7">
+                    <a href="mailto:humaita@encontrid.com">humaita@encontrid.com</a>
+                    <a href="tel:+5521999999990">(21) 99999-9990</a>
+                </div>
+            </div>
+        </article>
+        <footer class="footer-bg">
+            <div class="footer container">
+                <img src="./assets/img/encontrid.svg" alt="Encontrid">
+                <div class="footer-contact">
+                    <h3 class="font-2-m-b color-2">contato</h3>
+                    <ul class="font-2-s color-5">
+                        <li><a href="tel:+5521999999999">+55 (21) 99999-9999</a></li>
+                        <li><a href="mailto:contato@encontrid.com">contato@encontrid.com</a></li>
+                        <li>Rua A, 18 - Bairro B</li>
+                        <li>Rio de Janeiro - RJ</li>
+                    </ul>
+                    <ul class="footer-socials">
+                        <li>
+                            <a href="./"><img src="./assets/icons/instagram.svg" alt="Instagram"></a>
+                        </li>
+                        <li>
+                            <a href="./"><img src="./assets/icons/facebook.svg" alt="Facebook"></a>
+                        </li>
+                        <li>
+                            <a href="./"><img src="./assets/icons/youtube.svg" alt="Youtube"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-infos">
+                    <h3 class="font-2-m-b color-2">informações</h3>
+                    <nav>
+                        <ul class="font-1-m color-5">
+                            <li><a href="./groups.html">Grupos</a></li>
+                            <li><a href="./plans.html">Planos</a></li>
+                            <li><a href="./contact.html">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <p class="footer-copy font-2-s color-2">Encontrid © Alguns direitos reservados.</p>
+            </div>
+        </footer>
+    </body>
+</html>

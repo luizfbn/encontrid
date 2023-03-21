@@ -1,3 +1,8 @@
+.questions {
+    background-image: url("../../assets/icons/question-marks.svg");
+    background-repeat: no-repeat;
+    background-position: top 32px right 120px;
+}
 .questions h2 {
     margin-bottom: 80px;
 }
@@ -40,7 +45,17 @@
 }
 
 @media (max-width: 800px) {
+    .questions {
+        background-size: 120px;
+        background-position: top 20px right 120px;
+    }
     .questions h2 {
         margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    .questions {
+        background-position: top 20px right;
     }
 }

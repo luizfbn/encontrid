@@ -7,6 +7,7 @@
 
 /* Utils */
 @import "./utils/components.css";
+@import "./utils/form.css";
 
 /* Home */
 @import "./home/intro.css";
@@ -20,3 +21,7 @@
 /* Plans */
 @import "./plans/plans.css";
 @import "./plans/questions.css";
+
+/* Contact */
+@import "./contact/contact.css";
+@import "./contact/address.css";
