@@ -1,0 +1,94 @@
+#registration {
+    background: linear-gradient(var(--color-s4) 600px, var(--color-1) 0px);
+}
+.registration {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    background-color: var(--color-s5);
+    border-radius: 28px 28px 0 28px;
+    box-shadow: 4px 4px 0 0 var(--color-p1);
+    transition: box-shadow .15s;
+}
+.registration:hover {
+    box-shadow: 8px 8px 0 0 var(--color-p1);
+    transition: box-shadow .15s;
+}
+.registration h2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.registration h2::before {
+    content: "";
+    background-image: url("../../assets/icons/tilde.svg");
+    display: inline-block;
+    width: 10px;
+    height: 4px;
+    position: absolute;
+    left: -18px;
+}
+.registration-product,
+.registration-user {
+    padding: 42px;
+}
+.registration-product > * {
+    grid-column: 1/-1;
+}
+.registration-product {
+    border-radius: 28px 0 0 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-content: start;
+}
+.registration-product label {
+    background-color: var(--color-s4);
+    padding: 12px 16px;
+    grid-column: initial;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.registration-product label:nth-of-type(3),
+.registration-product label:nth-of-type(4),
+.registration-product label:nth-of-type(5) {
+    grid-column: 1/-1;
+}
+.registration-product input[type="radio"] + label::before {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--color-2);
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.registration-product input[type="radio"]:checked + label::before {
+    border: 1px solid var(--color-s4);
+    box-shadow: inset 0 0 0 3px var(--color-2), inset 0 0 0 6px var(--color-s4);
+}
+.registration-product input[type="radio"]:checked + label,
+.registration-product input[type="checkbox"]:checked + label {
+    background-color: var(--color-2);
+    color: var(--color-s4);
+}
+.registration-product input[type="checkbox"] + label {
+    justify-content: center;
+}
+.registration-product input[type="radio"],
+.registration-product input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.registration-user {
+    background-color: var(--color-0);
+    border-radius: 0 28px 0 0;
+}
+.registration-product #child:checked ~ #french,
+.registration-product #child:checked ~ #french + label {
+    display: none;
+}
+

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pré-inscrição | Encontrid</title>
+        <meta name="description" content="Faça sua pré-inscrição.">
+        <link rel="stylesheet" href="./css/style.css">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600&family=Lato:wght@400;700&family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+    </head>
+    <body id="registration">
+        <header class="header-bg">
+            <div class="header container">
+                <a href="./">
+                    <img src="./assets/img/encontrid.svg" alt="Encontrid">
+                </a>
+                <input id="header-menu-toggle" type="checkbox"/>
+                <label class="header-menu-button-container" for="header-menu-toggle">
+                    <div class="header-menu-button"></div>
+                </label>
+                <nav aria-label="primary">
+                    <ul class="header-menu color-2 font-1-m">
+                        <li><a href="./groups.html">Grupos</a></li>
+                        <li><a href="./plans.html">Planos</a></li>
+                        <li><a href="./contact.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="title">
+                <div class="container">
+                    <p class="font-2-m-b color-4 all-caps">entraremos em contato</p>
+                    <h1 class="font-1-xxl color-2">faça sua pré-inscrição</h1>
+                </div>
+            </div>
+            <div class="container padding-bottom">
+                <form class="registration" action="./">
+                    <div class="registration-product font-1-s color-2">
+                        <h2 class="font-1-xs color-4 all-caps">plano</h2>
+                        <input type="radio" name="plan" value="basico" id="basic" checked>
+                        <label for="basic">Básico</label>
+                        <input type="radio" name="plan" value="premium" id="premium">
+                        <label for="premium">Premium</label>
+
+                        <h2 class="font-1-xs color-4 all-caps">grupo</h2>
+                        <input type="radio" name="group" value="crianca" id="child" checked>
+                        <label for="child">Criança</label>
+                        <input type="radio" name="group" value="adolescente" id="teen">
+                        <label for="teen">Adolescente</label>
+                        <input type="radio" name="group" value="adulto" id="adult">
+                        <label for="adult">Adulto</label>
+                        
+                        <h2 class="font-1-xs color-4 all-caps">idioma(s)</h2>
+                        <input type="checkbox" name="language" value="ingles" id="english" checked>
+                        <label for="english">Inglês</label>
+                        <input type="checkbox" name="language" value="espanhol" id="spanish">
+                        <label for="spanish">Espanhol</label>
+                        <input type="checkbox" name="language" value="frances" id="french">
+                        <label for="french">Francês</label>
+                    </div>
+                    <div class="registration-user form">
+                        <h2 class="font-1-xs color-4 all-caps col-2">dados pessoais</h2>
+                        <div>
+                            <label for="firstname">Nome</label>
+                            <input type="text" id="firstname" name="firstname">
+                        </div>
+                        <div>
+                            <label for="lastname">Sobrenome</label>
+                            <input type="text" id="lastname" name="lastname">
+                        </div>
+                        <div>
+                            <label for="lastname">CPF</label>
+                            <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+                        </div>
+                        <div>
+                            <label for="phone">Telefone</label>
+                            <input type="text" id="phone" name="phone" placeholder="(99) 9999-9999">
+                        </div>
+                        <div class="col-2">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="contato@email.com">
+                        </div>
+                        <h2 class="font-1-xs color-4 all-caps col-2">unidade</h2>
+                        <div class="col-2">
+                            <select name="address" id="address">
+    
+                            </select>
+                        </div>
+                        <button class="button col-2">Enviar pré-inscrição</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        
+        <footer class="footer-bg">
+            <div class="footer container">
+                <img src="./assets/img/encontrid.svg" alt="Encontrid">
+                <div class="footer-contact">
+                    <h3 class="font-2-m-b color-2">contato</h3>
+                    <ul class="font-2-s color-5">
+                        <li><a href="tel:+5521999999999">+55 (21) 99999-9999</a></li>
+                        <li><a href="mailto:contato@encontrid.com">contato@encontrid.com</a></li>
+                        <li>Rua A, 18 - Bairro B</li>
+                        <li>Rio de Janeiro - RJ</li>
+                    </ul>
+                    <ul class="footer-socials">
+                        <li>
+                            <a href="./"><img src="./assets/icons/instagram.svg" alt="Instagram"></a>
+                        </li>
+                        <li>
+                            <a href="./"><img src="./assets/icons/facebook.svg" alt="Facebook"></a>
+                        </li>
+                        <li>
+                            <a href="./"><img src="./assets/icons/youtube.svg" alt="Youtube"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-infos">
+                    <h3 class="font-2-m-b color-2">informações</h3>
+                    <nav>
+                        <ul class="font-1-m color-5">
+                            <li><a href="./groups.html">Grupos</a></li>
+                            <li><a href="./plans.html">Planos</a></li>
+                            <li><a href="./contact.html">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <p class="footer-copy font-2-s color-2">Encontrid © Alguns direitos reservados.</p>
+            </div>
+        </footer>
+    </body>
+</html>

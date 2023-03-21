@@ -25,3 +25,6 @@
 /* Contact */
 @import "./contact/contact.css";
 @import "./contact/address.css";
+
+/* Registration */
+@import "./registration/registration.css";
