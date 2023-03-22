@@ -55,6 +55,13 @@
 .registration-product label:nth-of-type(5) {
     grid-column: 1/-1;
 }
+.registration-product label:hover {
+    background-color: var(--color-s3);
+}
+.registration-product input[type="radio"]:focus + label,
+.registration-product input[type="checkbox"]:focus + label {
+    box-shadow: 0 0 0 2px var(--color-p1);
+}
 .registration-product input[type="radio"] + label::before {
     content: "";
     display: inline-block;
@@ -83,12 +90,52 @@
     position: absolute;
     pointer-events: none;
 }
-.registration-user {
-    background-color: var(--color-0);
-    border-radius: 0 28px 0 0;
-}
 .registration-product #child:checked ~ #french,
 .registration-product #child:checked ~ #french + label {
     display: none;
 }
+.registration-user {
+    background-color: var(--color-0);
+    border-radius: 0 28px 0 0;
+    background-image: url("../../assets/icons/draw-waves.svg");
+    background-repeat: no-repeat;
+    background-position: bottom 42px right 42px;
+}
+.registration-product h2:not(:first-of-type),
+.registration-user h2:not(:first-of-type) {
+    margin-top: 20px;
+}
+.registration-user button {
+    margin-top: 28px;
+}
 
+@media (max-width: 1200px) {
+    .registration-product,
+    .registration-user {
+        padding: 32px;
+    }
+    .registration-user {
+        background-size: 160px;
+    }
+}
+
+@media (max-width: 800px) {
+    .registration {
+        grid-template-columns: 1fr;
+    }
+    .registration-product {
+        border-radius: 28px 28px 0 0;
+    }
+    .registration-user {
+        border-radius: 0 0 0 28px;
+    }
+}
+
+@media (max-width: 600px) {
+    .registration-product {
+        grid-template-columns: 1fr;
+    }
+    .registration-user {
+        background-image: none;
+    }
+}

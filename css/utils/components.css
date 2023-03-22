@@ -45,6 +45,14 @@
 .button.secondary:hover {
     background-color: #57A0CE;
 }
+.button:focus,
+.button.secondary:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-p3);
+}
+.button.secondary:focus {
+    box-shadow: 0 0 0 2px var(--color-s3);
+}
 .button.big {
     padding: 16px 32px;
 }

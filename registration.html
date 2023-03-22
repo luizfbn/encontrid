@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pré-inscrição | Encontrid</title>
         <meta name="description" content="Faça sua pré-inscrição.">
+        <link rel="preload" href="./css/style.css" as="style">
         <link rel="stylesheet" href="./css/style.css">
     
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,7 +64,7 @@
                         <label for="french">Francês</label>
                     </div>
                     <div class="registration-user form">
-                        <h2 class="font-1-xs color-4 all-caps col-2">dados pessoais</h2>
+                        <h2 class="font-1-xs color-8 all-caps col-2">dados pessoais</h2>
                         <div>
                             <label for="firstname">Nome</label>
                             <input type="text" id="firstname" name="firstname">
@@ -84,10 +85,12 @@
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" placeholder="contato@email.com">
                         </div>
-                        <h2 class="font-1-xs color-4 all-caps col-2">unidade</h2>
+                        <h2 class="font-1-xs color-8 all-caps col-2">unidade</h2>
                         <div class="col-2">
                             <select name="address" id="address">
-    
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="copacabana">Copacabana</option>
+                                <option value="humaita">Humaitá</option>
                             </select>
                         </div>
                         <button class="button col-2">Enviar pré-inscrição</button>
