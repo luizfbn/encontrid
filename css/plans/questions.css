@@ -13,21 +13,25 @@
 .questions dl > div:nth-child(odd) {
     background-color: var(--color-2);
 }
-.questions dt {
+.questions button {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
     gap: 8px;
     cursor: pointer;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
 }
-.questions dt::before {
+.questions button::before {
     content: "";
     background: url("../../assets/icons/tilde.svg");
     display: inline-block;
     width: 10px;
     height: 4px;
 }
-.questions dt::after {
+.questions button::after {
     content: "";
     background: url("../../assets/icons/open-arrow.svg");
     display: inline-block;
@@ -35,8 +39,15 @@
     height: 6px;
     transition: .5s;
 }
-.questions dt:hover::after {
+.questions button:hover::after,
+.questions button[aria-expanded="true"]::after {
     transform: rotate(180deg);
+}
+.js .questions dd {
+    display: none;
+}
+.js .questions dd.active {
+    display: block;
 }
 .questions dd {
     padding-left: 20px;

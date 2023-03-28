@@ -7,10 +7,12 @@
         <meta name="description" content="Conheça nossos grupos e inicie a agora mesmo.">
         <link rel="preload" href="./css/style.css" as="style">
         <link rel="stylesheet" href="./css/style.css">
-    
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600&family=Lato:wght@400;700&family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+
+        <script>document.documentElement.classList.add('js');</script>
     </head>
     <body id="groups">
         <header class="header-bg">
@@ -39,7 +41,8 @@
                 </div>
             </div>
             <ul class="groups container padding-bottom">
-                <li class="group">
+                <li class="group anchor">
+                    <span id="group-child" class="anchor-item"></span>
                     <div class="group-img">
                         <img src="./assets/img/kid.jpg" width="720" height="668" alt="Criança">
                     </div>
@@ -53,10 +56,11 @@
                         </div>
                         <span class="font-2-xs color-s4 all-caps">8 a 12 anos</span>
                         <p class="font-2-s color-7">Através de uma conversação e jogos lúdicos, sua criança é capaz de se divertir sem dar conta que está desenvolvendo uma língua.</p>
-                        <a href="./registration.html" class="button">inicie agora</a>
+                        <a href="./registration.html?group=crianca" class="button">inicie agora</a>
                     </div>
                 </li>
-                <li class="group">
+                <li class="group anchor">
+                    <span id="group-teen" class="anchor-item"></span>
                     <div class="group-img">
                         <img src="./assets/img/teen.jpg" width="720" height="668" alt="Adolescente">
                     </div>
@@ -71,10 +75,11 @@
                         </div>
                         <span class="font-2-xs color-s4 all-caps">+12 anos</span>
                         <p class="font-2-s color-7">A galera fala, o professor segue o fluxo. Aprenda o idioma realmente falado. Séries, filmes, redes sociais... Tudo vira assunto para ser conversado.</p>
-                        <a href="./registration.html" class="button">inicie agora</a>
+                        <a href="./registration.html?group=adolescente" class="button">inicie agora</a>
                     </div>
                 </li>
-                <li class="group">
+                <li class="group anchor">
+                    <span id="group-adult" class="anchor-item"></span>
                     <div class="group-img">
                         <img src="./assets/img/adult.jpg" width="720" height="668" alt="Adulto">
                     </div>
@@ -89,7 +94,7 @@
                         </div>
                         <span class="font-2-xs color-s4 all-caps">+16 anos</span>
                         <p class="font-2-s color-7">Qualquer assunto a qualquer momento. Para trabalhar, viajar e para levar para a vida. Pratique e sinta o prazer de poder se comunicar com o mundo.</p>
-                        <a href="./registration.html" class="button">inicie agora</a>
+                        <a href="./registration.html?group=adulto" class="button">inicie agora</a>
                     </div>
                 </li>
             </ul>
@@ -142,5 +147,6 @@
                 <p class="footer-copy font-2-s color-2">Encontrid © Alguns direitos reservados.</p>
             </div>
         </footer>
+        <script src="./js/script.js"></script>
     </body>
 </html>

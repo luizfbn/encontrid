@@ -7,10 +7,12 @@
         <meta name="description" content="Escolha o melhor plano para você.">
         <link rel="preload" href="./css/style.css" as="style">
         <link rel="stylesheet" href="./css/style.css">
-    
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600&family=Lato:wght@400;700&family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+
+        <script>document.documentElement.classList.add('js');</script>
     </head>
     <body id="plans">
         <header class="header-bg">
@@ -49,7 +51,7 @@
                         <li>Acréscimo de R$75 por idioma a partir do segundo</li>
                         <li>Acesso ao material de suporte digital do idioma em curso</li>
                     </ul>
-                    <a href="./registration.html" class="button secondary">inicie agora</a>
+                    <a href="./registration.html?plan=basico" class="button secondary">inicie agora</a>
                 </div>
                 <div class="plans-item">
                     <h3 class="font-1-l color-9">premium</h3>
@@ -62,7 +64,7 @@
                         <li>Acesso ao material de suporte digital de todos idiomas</li>
                         <li>Desconto de R$35 por idioma a partir do segundo</li>
                     </ul>
-                    <a href="./registration.html" class="button">inicie agora</a>
+                    <a href="./registration.html?plan=premium" class="button">inicie agora</a>
                 </div>
             </div>
         </main>
@@ -70,32 +72,32 @@
             <h2 class="font-1-xxl color-10">perguntas frequentes</h2>
             <dl>
                 <div>
-                    <dt class="font-1-m-b color-10">Qual forma de pagamento vocês aceitam?</dt>
-                    <dd class="font-2-s color-7">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+                    <dt><button class="font-1-m-b color-10" aria-controls="question1" aria-expanded="true">Qual forma de pagamento vocês aceitam?</button></dt>
+                    <dd id="question1" class="font-2-s color-7 active">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
                 </div>
                 <div>
-                    <dt class="font-1-m-b color-10">Como posso entrar em contato?</dt>
-                    <dd class="font-2-s color-7">Através da nossa página de contato, email ou telefone.</dd>
+                    <dt><button class="font-1-m-b color-10" aria-controls="question2" aria-expanded="false">Como posso entrar em contato?</button></dt>
+                    <dd id="question2" class="font-2-s color-7">Através da nossa página de contato, email ou telefone.</dd>
                 </div>
                 <div>
-                    <dt class="font-1-m-b color-10">Vocês possuem algum desconto?</dt>
-                    <dd class="font-2-s color-7">Nós lançamos promoções no preço dos planos durante o ano.</dd>
+                    <dt><button class="font-1-m-b color-10" aria-controls="question3" aria-expanded="false">Vocês possuem algum desconto?</button></dt>
+                    <dd id="question3" class="font-2-s color-7">Nós lançamos promoções no preço dos planos durante o ano.</dd>
                 </div>
                 <div>
-                    <dt class="font-1-m-b color-10">Para fazer mais que um idioma tenho que pagar mais de um plano?</dt>
-                    <dd class="font-2-s color-7">Não. Você paga apenas um adicional. O valor do adicional varia de acordo com o seu plano.</dd>
+                    <dt><button class="font-1-m-b color-10" aria-controls="question4" aria-expanded="false">Para fazer mais que um idioma tenho que pagar mais de um plano?</button></dt>
+                    <dd id="question4" class="font-2-s color-7">Não. Você paga apenas um adicional. O valor do adicional varia de acordo com o seu plano.</dd>
                 </div>
                 <div>
-                    <dt class="font-1-m-b color-10">Posso parcelar no boleto?</dt>
-                    <dd class="font-2-s color-7">Não disponibilizamos parcelamento no boleto.</dd>
+                    <dt><button class="font-1-m-b color-10" aria-controls="question5" aria-expanded="false">Posso parcelar no boleto?</button></dt>
+                    <dd id="question5" class="font-2-s color-7">Não disponibilizamos parcelamento no boleto.</dd>
                 </div>
                 <div>
-                    <dt class="font-1-m-b color-10">Quantos idiomas posso fazer?</dt>
-                    <dd class="font-2-s color-7">Você pode acrescentar quantos idiomas for possível para o seu grupo.</dd>
+                    <dt><button class="font-1-m-b color-10" aria-controls="question6" aria-expanded="false">Quantos idiomas posso fazer?</button></dt>
+                    <dd id="question6" class="font-2-s color-7">Você pode acrescentar quantos idiomas for possível para o seu grupo.</dd>
                 </div>
                 <div>
-                    <dt class="font-1-m-b color-10">As aulas são apenas presenciais?</dt>
-                    <dd class="font-2-s color-7">Não. Nossos encontros são presenciais, porém também são disponibilizados ao vivo, onde os alunos remotos podem participar da aula por chamada de vídeo.</dd>
+                    <dt><button class="font-1-m-b color-10" aria-controls="question7" aria-expanded="false">As aulas são apenas presenciais?</button></dt>
+                    <dd id="question7" class="font-2-s color-7">Não. Nossos encontros são presenciais, porém também são disponibilizados ao vivo, onde os alunos remotos podem participar da aula por chamada de vídeo.</dd>
                 </div>
             </dl>
         </article>
@@ -135,5 +137,6 @@
                 <p class="footer-copy font-2-s color-2">Encontrid © Alguns direitos reservados.</p>
             </div>
         </footer>
+        <script src="./js/script.js"></script>
     </body>
 </html>

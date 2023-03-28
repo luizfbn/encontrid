@@ -20,7 +20,7 @@
 .footer-contact li {
     margin-bottom: 24px;
 }
-.footer-contact ul:first-of-type li:nth-child(even):after {
+.footer-contact ul:first-of-type li:nth-child(even)::after {
     content: "";
     display: block;
     max-width: 360px;
@@ -63,7 +63,7 @@
         width: 100%;
         text-align: center;
     }
-    .footer-contact ul:first-of-type li:nth-child(even):after {
+    .footer-contact ul:first-of-type li:nth-child(even)::after {
         margin: 24px auto 0 auto;
     }
     .footer-socials {

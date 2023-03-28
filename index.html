@@ -7,10 +7,12 @@
         <meta name="description" content="Coloque em prática seus conhecimentos do seu idioma preferido conversando com outras pessoas.">
         <link rel="preload" href="./css/style.css" as="style">
         <link rel="stylesheet" href="./css/style.css">
-    
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600&family=Lato:wght@400;700&family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+
+        <script>document.documentElement.classList.add('js');</script>
     </head>
     <body>
         <header class="header-bg">
@@ -36,7 +38,7 @@
                 <div class="intro-content">
                     <h1 class="font-1-xxl">O seu encontro de idiomas</h1>
                     <p class="color-4 font-2-m">Coloque em prática seus conhecimentos do seu idioma preferido conversando com outras pessoas.</p>
-                    <a class="button big" href="./groups.html">Saiba mais</a>
+                    <a class="button big" href="#methodology">Saiba mais</a>
                 </div>
                 <div>
                     <img src="./assets/img/intro.png" width="689" height="490" alt="Pessoas interagindo">
@@ -50,7 +52,7 @@
             </div>
             <ul>
                 <li>
-                    <a href="./registration.html">
+                    <a href="./groups.html#group-child">
                         <div>
                             <img src="./assets/img/kid.jpg" width="720" height="668" alt="Criança">
                         </div>
@@ -59,7 +61,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./registration.html">
+                    <a href="./groups.html#group-teen">
                         <div>
                             <img src="./assets/img/teen.jpg" width="720" height="668" alt="Adolescente">
                         </div>
@@ -68,7 +70,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./registration.html">
+                    <a href="./groups.html#group-adult">
                         <div>
                             <img src="./assets/img/adult.jpg" width="720" height="668" alt="Adulto">
                         </div>
@@ -78,7 +80,8 @@
                 </li>
             </ul>
         </article>
-        <article class="methodology container padding-bottom">
+        <article class="methodology container padding-bottom anchor">
+            <span id="methodology" class="anchor-item"></span>
             <div class="methodology-title">
                 <p class="font-2-m-b color-6 all-caps">o diferencial</p>
                 <h2 class="font-1-xxl color-10">metodologia</h2>
@@ -142,7 +145,7 @@
                     <li>Acréscimo de R$75 por idioma a partir do segundo</li>
                     <li>Acesso ao material de suporte digital do idioma em curso</li>
                 </ul>
-                <a href="./registration.html" class="button secondary">inicie agora</a>
+                <a href="./registration.html?plan=basico" class="button secondary">inicie agora</a>
             </div>
             <div class="plans-item">
                 <h3 class="font-1-l color-9">premium</h3>
@@ -155,7 +158,7 @@
                     <li>Acesso ao material de suporte digital de todos idiomas</li>
                     <li>Desconto de R$35 por idioma a partir do segundo</li>
                 </ul>
-                <a href="./registration.html" class="button">inicie agora</a>
+                <a href="./registration.html?plan=premium" class="button">inicie agora</a>
             </div>
         </article>
         <footer class="footer-bg">
@@ -194,5 +197,6 @@
                 <p class="footer-copy font-2-s color-2">Encontrid © Alguns direitos reservados.</p>
             </div>
         </footer>
+        <script src="./js/script.js"></script>
     </body>
 </html>
