@@ -39,9 +39,11 @@
     height: 6px;
     transition: .5s;
 }
-.questions button:hover::after,
 .questions button[aria-expanded="true"]::after {
     transform: rotate(180deg);
+}
+.questions button[aria-expanded="false"]::after {
+    transform: rotate(360deg);
 }
 .js .questions dd {
     display: none;
