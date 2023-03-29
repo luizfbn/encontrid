@@ -1,3 +1,5 @@
+import { modal } from './modal.js';
+
 // activates header current page 
 function activateHeaderLink(link) {
     const url = location.href;
@@ -12,9 +14,11 @@ links.forEach(activateHeaderLink);
 
 // checks product form based on url params
 function activateRegistrationProduct(param) {
-    const element = document.querySelector(`[value=${param}]`);
-    if (element) {
-        element.checked = true;
+    if (param) {
+        const element = document.querySelector(`[value=${param}]`);
+        if (element) {
+            element.checked = true;
+        }
     }
 }
 
@@ -36,3 +40,15 @@ const questions = document.querySelectorAll('.questions button');
 questions.forEach((question) => {
     question.addEventListener('click', activateQuestion);
 });
+
+// creates the form submit modal
+function handleSubmit(event) {
+    event.preventDefault();
+    event.currentTarget.modal.showModal();
+}
+
+const form = document.querySelector('form');
+if (form) {
+    form.modal = new modal();
+    form.addEventListener('submit', handleSubmit);
+}

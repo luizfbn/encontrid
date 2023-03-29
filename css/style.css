@@ -8,6 +8,7 @@
 /* Utils */
 @import "./utils/components.css";
 @import "./utils/form.css";
+@import "./utils/modal.css";
 
 /* Home */
 @import "./home/intro.css";
